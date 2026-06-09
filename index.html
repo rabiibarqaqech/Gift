@@ -1,18 +1,38 @@
-<div class="container">
-    <img src="image.jpg" alt="Image">
-</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صورة في الوسط</title>
 
 <style>
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
 
-.container img{
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-}
+    body{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden;
+        background-color:#000;
+    }
+
+    img{
+        max-width:100%;
+        max-height:100%;
+        height:auto;
+        width:auto;
+        object-fit:contain;
+    }
 </style>
+</head>
+
+<body>
+    <img src="image.jpg" alt="الصورة">
+</body>
+</html>
